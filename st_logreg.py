@@ -14,11 +14,11 @@ if test is not None:
     test = pd.read_csv(test)
     st.write(test.head(5))
 else:
-    test = pd.read_csv('../aux/credit_train.csv')
+    test = pd.read_csv('credit_train.csv')
 
 st.divider()
 
-train = pd.read_csv('../aux/credit_train.csv')
+train = pd.read_csv('credit_train.csv')
 
 # Нормируем данные
 ss = StandardScaler()
